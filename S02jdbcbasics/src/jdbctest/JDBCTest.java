@@ -8,11 +8,29 @@ import java.sql.Statement;
 
 public class JDBCTest {
 
+	private static String rowsUpdated;
+
 	public static void main(String[] args) {
 		// readFromDB();
 		// insertIntoDB();
-		updateIntoDB();
-		 readFromDB();
+		//updateIntoDB();
+		 deleteDb();
+	}
+
+	private static void deleteDb() {
+		try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/mydb", "root", "Virat@12");
+				Statement statement = connection.createStatement();) {
+
+			int rowsDeleted = statement.executeUpdate("delete from account where accno=1");
+			System.out.println("number of rows deleted: " + rowsUpdated);
+
+		} catch (
+
+		SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 	private static void updateIntoDB() {
@@ -20,7 +38,7 @@ public class JDBCTest {
 				Statement statement = connection.createStatement();) {
 
 			int rowsUpdated = statement.executeUpdate("update account set balance=5000 where accno=3");
-			System.out.println("number of rows inserted: " + rowsUpdated);
+			System.out.println("number of rows updated: " + rowsUpdated);
 
 		} catch (
 

@@ -18,7 +18,7 @@ public class AdditionServlet extends GenericServlet {
 		int result = number1 + number2;
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
-		out.println("<h3>Result = "+result+"/h3>");
+		out.println("<h3>Result = "+result+"</h3>");
 	}
 
 }
