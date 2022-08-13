@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Adding New Product</display-name>
+  
+  <servlet>
+    <description></description>
+    <display-name>ProductRegistrationServlet</display-name>
+    <servlet-name>ProductRegistrationServlet</servlet-name>
+    <servlet-class>com.servlets.ProductRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductRegistrationServlet</servlet-name>
+    <url-pattern>/ProductRegistrationServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

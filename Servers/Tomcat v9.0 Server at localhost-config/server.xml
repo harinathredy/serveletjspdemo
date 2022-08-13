@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="getandpostassist" path="/getandpostassist" reloadable="true" source="org.eclipse.jst.jee.server:getandpostassist"/><Context docBase="userwebapp" path="/userwebapp" reloadable="true" source="org.eclipse.jst.jee.server:userwebapp"/><Context docBase="Servletconcept" path="/Servletconcept" reloadable="true" source="org.eclipse.jst.jee.server:Servletconcept"/><Context docBase="ServletInterfaces" path="/ServletInterfaces" reloadable="true" source="org.eclipse.jst.jee.server:ServletInterfaces"/><Context docBase="FilterDemo" path="/FilterDemo" reloadable="true" source="org.eclipse.jst.jee.server:FilterDemo"/><Context docBase="CookieTrackingDemo" path="/CookieTrackingDemo" reloadable="true" source="org.eclipse.jst.jee.server:CookieTrackingDemo"/><Context docBase="URLRewriteDemo" path="/URLRewriteDemo" reloadable="true" source="org.eclipse.jst.jee.server:URLRewriteDemo"/><Context docBase="FormFieldsTracking" path="/FormFieldsTracking" reloadable="true" source="org.eclipse.jst.jee.server:FormFieldsTracking"/><Context docBase="LoginLogout" path="/LoginLogout" reloadable="true" source="org.eclipse.jst.jee.server:LoginLogout"/></Host>
+      <Context docBase="flyawayphase-2project" path="/flyawayphase-2project" reloadable="true" source="org.eclipse.jst.jee.server:flyawayphase-2project"/></Host>
     </Engine>
   </Service>
 </Server>

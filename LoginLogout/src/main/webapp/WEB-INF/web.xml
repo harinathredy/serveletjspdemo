@@ -18,11 +18,11 @@
     <servlet-class>Dashboard</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>Logout</servlet-name>
-    <servlet-class>Logout</servlet-class>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Logout</servlet-name>
+    <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
